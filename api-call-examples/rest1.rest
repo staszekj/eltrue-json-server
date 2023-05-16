@@ -1,0 +1,25 @@
+
+
+GET http://127.0.0.1:4000/items?q=example HTTP/1.1
+
+###
+
+POST http://127.0.0.1:4000/items HTTP/1.1
+content-type: application/json
+
+{
+    "name": "example1"
+}
+
+###
+
+PATCH  http://127.0.0.1:4000/items/dfd2ce4e-1d2f-40ec-aa6f-417399b8f141 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "example100"
+}
+
+### 
+
+DELETE http://127.0.0.1:4000/items/dfd2ce4e-1d2f-40ec-aa6f-417399b8f141 HTTP/1.1
